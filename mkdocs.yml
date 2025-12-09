@@ -82,7 +82,7 @@ nav:
           - Evaluation:
               - Evaluation Sample: concepts/components/eval_sample.md
               - Evaluation Dataset: concepts/components/eval_dataset.md
-  
+
   - 🛠️ How-to Guides:
       - howtos/index.md
       - Customizations:
@@ -260,6 +260,14 @@ extra:
 plugins:
   - social:
       enabled: !ENV [MKDOCS_CI, true]
+  - with-pdf:
+      author: RAGAS Team
+      copyright: RAGAS Contributors
+      cover_title: RAGAS Documentation
+      cover_subtitle: Evaluation Framework for AI Applications
+      exclude_pages:
+        - 'community/'
+      output_path: pdf/document.pdf
   - search
   - git-revision-date-localized:
       enabled: !ENV [MKDOCS_CI, false]
